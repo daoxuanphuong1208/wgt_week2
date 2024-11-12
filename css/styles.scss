@@ -54,3 +54,35 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+
+.header {
+  height: 78px;
+}
+.header__top {
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: var(--background-black);
+
+  & span {
+    font-size: 1.4rem;
+    color: var(--text-white);
+  }
+}
+.header__bottom {
+  height: calc(100% - 34px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-white);
+
+  & h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: var(--text-black);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
