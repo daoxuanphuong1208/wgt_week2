@@ -1,0 +1,58 @@
+:root {
+  --font-family-main: "Poppins", sans-serif;
+  --text-white: #fff;
+  --text-black: #000;
+  --text-gray: #00000099;
+  --background-black: #000;
+  --background-white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-main);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.app {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
