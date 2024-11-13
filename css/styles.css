@@ -141,4 +141,34 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 1920px) {
+  .hero-banner__img {
+    height: auto;
+  }
+}
+@media (max-width: 1920px) {
+  .hero-banner__img {
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .hero-banner__img {
+    height: 600px;
+  }
+  .hero-banner__img img {
+    object-fit: cover;
+  }
+  .hero-banner__text {
+    gap: 12px;
+  }
+  .hero-banner__text h1 {
+    font-size: 5.6rem;
+    line-height: 76.8px;
+  }
+  .hero-banner__text div {
+    height: 40px;
+    padding-top: 12px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
