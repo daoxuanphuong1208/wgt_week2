@@ -58,19 +58,29 @@ a {
 .header {
   height: 78px;
 }
+
 .header__top {
   height: 34px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5px 20px;
   background-color: var(--background-black);
 
-  & span {
+  & .splide__slide {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--background-black);
+  }
+
+  & .splide__slide:nth-child(2) {
+    justify-content: right;
+  }
+
+  & .splide__slide span {
     font-size: 1.4rem;
     color: var(--text-white);
   }
 }
+
 .header__bottom {
   height: calc(100% - 34px);
   display: flex;
@@ -84,5 +94,24 @@ a {
     color: var(--text-black);
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__top {
+    .splide__slide {
+      justify-content: center;
+    }
+
+    .splide__arrow {
+      color: #fff;
+      background-color: transparent !important;
+    }
+    .splide__arrow--prev {
+      left: -10px;
+    }
+    .splide__arrow--next {
+      right: -10px;
+    }
   }
 }
