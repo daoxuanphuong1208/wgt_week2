@@ -108,5 +108,13 @@ a {
     right: -10px;
   }
 }
+@media (max-width: 360px) {
+  .header__top .splide__arrow--prev {
+    left: -20px;
+  }
+  .header__top .splide__arrow--next {
+    right: -20px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
